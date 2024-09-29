@@ -131,6 +131,25 @@ nav ul li a {
     line-height: 1.5;
 }
 
+.post-content {
+    padding: 10px; /* Padding for the expanded content */
+    border: 1px solid #ccc; /* Border around the content */
+    margin-top: 10px; /* Space above the content */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    color: #000;
+    display: none; /* Initially hidden */
+}
+
+.post-title {
+    cursor: pointer; /* Pointer cursor to indicate clickability */
+    color: #007BFF; /* Link color for titles */
+}
+
+.post-title:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 /* Contact Section */
 .contact-section {
     background-color: #f9f9f9; /* Light background for contrast */

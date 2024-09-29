@@ -30,6 +30,20 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
     });
 });
 
+// Toggle Blog Post Content
+document.querySelectorAll('.post-title').forEach(title => {
+    title.addEventListener('click', function() {
+        const content = this.nextElementSibling; // Selects the next sibling element (the post content)
+        
+        // Toggle visibility
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block"; // Show content
+        } else {
+            content.style.display = "none"; // Hide content
+        }
+    });
+});
+
 // Submit form to WhatsApp
 function submitForm(event) {
     event.preventDefault();
