@@ -32,6 +32,22 @@ main {
     padding: 20px;
 }
 
+input#search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.categories button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.featured-posts, .posts {
+    margin-bottom: 20px;
+}
+
 .post {
     background: #fff;
     margin: 20px 0;
@@ -49,4 +65,49 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+.related-posts ul {
+    list-style-type: none;
+}
+
+.related-posts ul li {
+    margin: 5px 0;
+}
+
+.comments {
+    margin: 20px 0;
+}
+
+.comments textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.social-share {
+    margin-top: 20px;
+}
+
+.social-share button {
+    margin-right: 10px;
+}
+
+#toggle-dark-mode {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode .post {
+    background-color: #444;
 }
