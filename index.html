@@ -19,14 +19,79 @@
     </header>
 
     <main>
+        <!-- Search Bar -->
+        <input type="text" id="search-bar" placeholder="Search for blog posts...">
+
+        <!-- Categories -->
+        <div class="categories">
+            <button data-category="all">All</button>
+            <button data-category="tech">Tech</button>
+            <button data-category="lifestyle">Lifestyle</button>
+            <button data-category="travel">Travel</button>
+        </div>
+
+        <!-- Featured Posts -->
+        <section class="featured-posts">
+            <h3>Featured Posts</h3>
+            <div class="featured">
+                <article class="post" data-category="tech">
+                    <h2>Featured Tech Post</h2>
+                    <p>Exciting content about technology...</p>
+                    <a href="#">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Blog Posts -->
         <section class="posts">
-            <article class="post">
-                <h2>First Blog Post</h2>
-                <p>This is a sample blog post. Keep reading to explore more interesting content!</p>
+            <article class="post" data-category="tech">
+                <h2>Tech Blog Post</h2>
+                <p>This is a sample blog post in tech. Keep reading for more content!</p>
                 <a href="#">Read More</a>
             </article>
-            <!-- Repeat article tags for more posts -->
+            <article class="post" data-category="lifestyle">
+                <h2>Lifestyle Blog Post</h2>
+                <p>This is a lifestyle-related post. Keep exploring more posts!</p>
+                <a href="#">Read More</a>
+            </article>
+            <!-- Add more blog posts as needed -->
         </section>
+
+        <!-- Related Posts -->
+        <aside class="related-posts">
+            <h3>Related Posts</h3>
+            <ul id="related-posts-list">
+                <!-- Related posts will appear here -->
+            </ul>
+        </aside>
+
+        <!-- Comment Section -->
+        <section class="comments">
+            <h3>Leave a Comment</h3>
+            <textarea id="comment-text" placeholder="Write your comment here"></textarea>
+            <button id="submit-comment">Submit</button>
+            <div class="comment-list">
+                <!-- Comments will be added here -->
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Social Share Buttons -->
+        <div class="social-share">
+            <button class="share-btn" data-platform="facebook">Share on Facebook</button>
+            <button class="share-btn" data-platform="twitter">Share on Twitter</button>
+        </div>
+
+        <!-- Dark Mode Toggle Button -->
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
     </main>
 
     <footer>
